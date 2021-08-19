@@ -1,0 +1,107 @@
+.grass {
+    background-color: rgb(7, 207, 7);
+    color: white;
+    font-weight: bold;
+}
+
+.fire {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.normal {
+    background-color: rgb(104, 52, 52);
+    color: white;
+    font-weight: bold;
+}
+
+.water {
+    background-color: turquoise;
+    color: white;
+    font-weight: bold;
+}
+
+.fighting {
+    background-color:tomato;
+    color: white;
+    font-weight: bold;
+}
+
+.flying {
+    background-color: rgb(86, 86, 248);
+    color: white;
+    font-weight: bold;
+}
+
+.poison {
+    background-color: rgb(226, 54, 226);
+    color: white;
+    font-weight: bold;
+}
+
+.ground {
+    background-color: rgb(255, 208, 0);
+    color: white;
+    font-weight: bold;
+}
+
+.rock {
+    background-color: rgb(139, 157, 139);
+    color: white;
+    font-weight: bold;
+}
+
+.bug {
+    background-color: greenyellow;
+    color: white;
+    font-weight: bold;
+}
+
+.ghost {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+.steel {
+    background-color: rgb(152, 164, 175);
+    color: white;
+    font-weight: bold;
+}
+
+.electric {
+    background-color: rgb(255, 204, 76);
+    color: white;
+    font-weight: bold;
+}
+
+.psychic {
+    background-color: rgb(255, 0, 170);
+    color: white;
+    font-weight: bold;
+}
+
+.ice {
+    background-color: rgb(68, 224, 251);
+    color: white;
+    font-weight: bold;
+}
+
+.dragon {
+    background-color: rgb(73, 3, 105);
+    color: white;
+    font-weight: bold;
+}
+
+.dark {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-weight: bold;
+}
+
+.fairy {
+    background-color: rgb(212, 121, 200);
+    color: white;
+    font-weight: bold;
+}
