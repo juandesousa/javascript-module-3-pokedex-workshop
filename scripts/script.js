@@ -1,4 +1,4 @@
-const searchPokemon = (pokemon) => {
+const renderPokemon = (pokemon) => {
     const {types} = pokemon;
     const cardContainer = document.querySelector('.card-container');
     const card = document.createElement('div');
@@ -18,7 +18,7 @@ const renderPokemonList = (res) => {
         li.classList.add(`pokemon-${index+1}`, "list-group-item", "col-3", "border-0")
         document.querySelector('.list-group').appendChild(li)
         li.innerHTML= `<button class="btn btn-link">${pokemon.name[0].toUpperCase()+pokemon.name.slice(1)}</button>`
-        document.querySelector(`.pokemon-${index+1}`).onclick = () => renderPokemon(index+1)
+        document.querySelector(`.pokemon-${index+1}`).onclick = () => searchPokemon(index+1)
     })
 }
 
@@ -62,9 +62,9 @@ const getAllPokemons = async () => {
     }
 }
 
-const renderPokemon = async (pokemon) => {
+const searchPokemon = async (pokemon) => {
     clearElement();
-
+    
     const valPokemon = typeof pokemon === 'string' ? pokemon.toLowerCase() : pokemon; 
 
     mySpinner();
@@ -74,7 +74,7 @@ const renderPokemon = async (pokemon) => {
         const fetchUrl = await fetch(url);
         const resJson = await fetchUrl.json();
         clearElement();
-        searchPokemon(resJson);
+        renderPokemon(resJson);
     }catch(error){
         clearElement();
         notFoundPokemon(valPokemon);
@@ -88,7 +88,7 @@ window.onload = () => {
 
     btnPrimary.addEventListener('click', () => {
         const inputValue = document.querySelector('.form-control').value;
-        inputValue && renderPokemon(inputValue);
+        inputValue && searchPokemon(inputValue);
     })
 
     lookAllPokemon.addEventListener('click', () => {
